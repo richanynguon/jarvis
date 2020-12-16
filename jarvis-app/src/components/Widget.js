@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { WidgetContext } from "../modules/widgetContext";
 import { Chat } from "./Chat";
-import { Onboard } from "./Onboard/Onboard.js";
+import { Onboard } from "./onboard/Onboard";
 
 // Concern that having an overall container instead
 // of letting all of the components on the app page
