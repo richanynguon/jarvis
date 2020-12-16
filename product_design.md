@@ -1,5 +1,54 @@
-# ES Chat Bot Product Design  
 
+Priorities:
+
+Suppose you were tasked with creating an Intercom-like bot for people looking to build an embedded systems project (https://learn.adafruit.com/guides/projects). For example, someone might want to build a basic light switch but someone else a self driving contraption. You might want to ask them what they're interested in and help them put together a parts list and determine a fun project they can work on.
+
+Take a look at Intercom's bot on their homepage ( [https://www.intercom.com/](https://www.intercom.com/) ) for inspiration. Try to find ways to add joy to the experience of talking to a bot (animations, emoji, or whatever feels special to you).
+
+Try to cap the total time to 8-10 hours. You can use what technologies you'd like but avoid using an off the shelf chat bot or a direct copy of someone else's project. We want to see how you make this project your own. It's okay if you don't finish. Part of the task is to see how well you can scope the work and what's a priority to you.
+
+If you have time leftover you can try something more full stack: see if you can come up with an app/script that displays the weather to an end user in a fun way.
+
+
+8-10 hours deadline
+
+MVP: Create a chat bot that  recommends a project and a parts list
+
+Requirements: 
+Bot has to be customer service friendly, think replika.ai
+Cannot use anothers chat bot
+
+Target User: Someone who is looking to build a project with specific interests 
+
+UI: Probably will just copy intercom, but use jarvis colors
+
+Stretch: Display weather to user, will probably 
+
+TODOS:
+Generate UI to reflect user flow (think of fast prototyping, to test cypress? )
+    - Gen a design system to keep consistency if changes are needed | 2 hrs
+    - Hard code required responses | 30 mins
+    - UI BREAK DOWN:
+        MVP: 
+         - A widget looking button to expand jarvis - icon change or animation to show it has been clicked on | 30 mins
+         - Onboarding pop up just a series of multiple choice questions | 2 hrs
+         - Landing pop up | if hard coded prob 1 hr
+            - Holds components: 
+            - Create projects
+            - Continue projects
+            - Feed back
+            - Peer project show case
+        - Chat instance | 2 hr
+Oh don't forget web reposinveness if its mobile you should prob just remove the
+widget button and make it full screen
+
+TOTAL HOPEFUL TIME: 8
+with 2 hours of error??? 
+-- will need data persistence MVP data storage stretch: database
+
+
+# ES Chat Bot Product Design  
+https://www.figma.com/file/3HAj9fz6Fq3GfPg6hoBTeL/Untitled?node-id=0%3A1
 ## Problem time estimations
 
 ## User Reasearch  
@@ -99,5 +148,6 @@ Consider scrapper
 ### Front-end  
 ### Continuous Integration / Continuous Deployment (CI)  
 ### Application Host Platforms  
+
 
 

@@ -17,8 +17,3 @@ export const InvertButton = styled.button`
   
 
 `;
-
-// &:active {
-//   transform: scale(1.01);
-//   background: ${c.PRIMARY_POP_COLOR};
-// }

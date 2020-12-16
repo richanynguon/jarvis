@@ -10,7 +10,7 @@ export function WalkThrough() {
             e.stopPropagation();
             setUserState({
               ...userState,
-              onboardingComplete: true,
+              currentView: 1,
               onboardingProgress: userState.onboardingProgress + 1,
             });
           }}
