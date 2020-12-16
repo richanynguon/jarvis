@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
+import { Logo } from "../design-system/icons";
 import { WidgetContext } from "../modules/widgetContext";
 import { Chat } from "./Chat";
 import { Dash } from "./Dash";
 import { Onboard } from "./onboard/Onboard";
-
-export const WidgetHeight = 1060;
-export const WidgetWidth = 344;
+import whiteLogo from '../assets/logowhite.png'
+import * as c from '../design-system/variables/colours'
 
 // Concern that having an overall container instead
 // of letting all of the components on the app page
@@ -24,12 +24,15 @@ const WidgetContainer = styled.div`
   align-items: flex-end;
 `;
 const WidgetIcon = styled.button`
-  border: 1px red solid;
   width: 70px;
   height: 70px;
   border-radius: 50px;
   margin: 20px;
   cursor: pointer;
+  background: ${c.PRIMARY_POP_COLOR};
+  display:flex;
+  justify-content: center;
+  align-items:center; 
 `;
 const WidgetPopOutContainer = styled.div`
   min-height: 260px;
@@ -76,7 +79,9 @@ export function Widget() {
         onClick={() => {
           SetIsExpanded(!isExpanded);
         }}
-      />
+      >
+        <Logo src={whiteLogo}/>
+      </WidgetIcon>
     </WidgetContainer>
   );
 }
