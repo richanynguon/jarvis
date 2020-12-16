@@ -1,6 +1,6 @@
   
-export const PRIMARY_POP_COLOR = '#44D6E1';
-export const SECONDARY_POP_COLOR = '#B4FAFF';
+export const PRIMARY_POP_COLOR = '#38B3BC';
+export const SECONDARY_POP_COLOR = '#44D6E1';
 export const LIGHT_NEUTRAL_COLOR = '#F6F1F0';
 export const DARK_NEUTRAL_COLOR = '#444140';
 
