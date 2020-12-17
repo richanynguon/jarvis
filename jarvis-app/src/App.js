@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+
+import { Widget } from "./components/Widget";
+import { WidgetContext } from "./modules/widgetContext";
 
 function App() {
+  const [userState, setUserState] = useState({
+    currentView: 0,
+    onboardingProgress: 0,
+    userLevel: null,
+    projects: {"e":"e"},
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <WidgetContext.Provider value={{ userState, setUserState }}>
+      <div className="appcontainer">
+        <Widget />
+      </div>
+    </WidgetContext.Provider>
   );
 }
 
