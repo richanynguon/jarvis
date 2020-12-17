@@ -1,48 +1,15 @@
 import { useContext, useRef, useState } from "react";
 import { WidgetContext } from "../../../modules/widgetContext";
 import styled from "styled-components";
-import background from "../../../assets/background.png";
 import { Icon } from "../../../design-system/icons";
 import Forward from "../../../assets/action_icons/keyboard_arrow_right.svg";
 import Back from "../../../assets/action_icons/keyboard_arrow_left.svg";
-import { H1, H2, H3, H4, H5 } from "../../../design-system/typography";
+import { H3, H4, H5 } from "../../../design-system/typography";
 import { Jarvis } from "./Jarvis";
 import { Button } from "../../../design-system/buttons";
 import * as c from "../../../design-system/variables/colours";
-const LevelContainer = styled.div`
-  background-image: ${(props) => `url(${background})`};
-  background-repeat: none;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  border-radius: 15px;
-`;
+import { ButtonGroup, Dialogue, LowOpacityContainer, ViewContainer } from "./ViewsCommonStyles";
 
-const LowOpacityContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 15px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-`;
-
-const Dialogue = styled.div`
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-`;
-
-const ButtonGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-`;
 
 // TRBL
 const ToolTipContainer = styled.div`
@@ -131,7 +98,7 @@ export function IdentifyLevel() {
   const { userState, setUserState } = useContext(WidgetContext);
   const tipRef = useRef(null);
   return (
-    <LevelContainer>
+    <ViewContainer>
       <LowOpacityContainer>
         <button
           onClick={(e) => {
@@ -199,6 +166,6 @@ export function IdentifyLevel() {
           <Icon src={Forward} />
         </button>
       </LowOpacityContainer>
-    </LevelContainer>
+    </ViewContainer>
   );
 }

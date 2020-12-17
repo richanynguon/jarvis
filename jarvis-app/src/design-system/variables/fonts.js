@@ -1,12 +1,11 @@
-  
 // font-family: ${font};
 export const BRAND_FONT = '"Montserrat", sans-serif';
 export const APP_FONT = '"Lato", sans-serif';
 
 // font-wieght: ${fontWeight};
-export const REGULAR = '400';
-export const BOLD = '700';
-export const LIGHT = '300';
+export const REGULAR = "400";
+export const BOLD = "700";
+export const LIGHT = "300";
 
 // font-size: '${fontSize}px'
 export const H1_FONT_SIZE = 24 / 10;
