@@ -9,7 +9,7 @@ function App() {
     currentView: 0,
     onboardingProgress: 0,
     userLevel: null,
-    projects: {},
+    projects: {"e":"e"},
   });
 
   return (

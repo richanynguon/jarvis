@@ -2,14 +2,17 @@ import { useContext, useRef, useState } from "react";
 import { WidgetContext } from "../../../modules/widgetContext";
 import styled from "styled-components";
 import { Icon } from "../../../design-system/icons";
-import Forward from "../../../assets/action_icons/keyboard_arrow_right.svg";
 import Back from "../../../assets/action_icons/keyboard_arrow_left.svg";
 import { H3, H4, H5 } from "../../../design-system/typography";
 import { Jarvis } from "./Jarvis";
 import { Button } from "../../../design-system/buttons";
 import * as c from "../../../design-system/variables/colours";
-import { ButtonGroup, Dialogue, LowOpacityContainer, ViewContainer } from "./ViewsCommonStyles";
-
+import {
+  ButtonGroup,
+  Dialogue,
+  LowOpacityContainer,
+  ViewContainer,
+} from "./ViewsCommonStyles";
 
 // TRBL
 const ToolTipContainer = styled.div`
@@ -154,17 +157,6 @@ export function IdentifyLevel() {
             />
           </ButtonGroup>
         </Dialogue>
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            setUserState({
-              ...userState,
-              onboardingProgress: userState.onboardingProgress + 1,
-            });
-          }}
-        >
-          <Icon src={Forward} />
-        </button>
       </LowOpacityContainer>
     </ViewContainer>
   );
