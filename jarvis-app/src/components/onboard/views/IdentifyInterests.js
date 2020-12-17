@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { WidgetContext } from "../../../modules/widgetContext";
 
+
 export function IdentifyInterests() {
     const { userState, setUserState } = useContext(WidgetContext);
     return (

@@ -55,7 +55,7 @@ export function Dash() {
               setUserState({ ...userState, currentView: 2 });
             }}
           >
-            <Icon src={send} />
+            <Icon primary src={send} />
             <H5 color={c.PRIMARY_POP_COLOR}>Create Project</H5>
           </InvertButton>
         </Component>

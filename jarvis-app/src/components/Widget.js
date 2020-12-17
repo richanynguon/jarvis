@@ -33,6 +33,7 @@ const WidgetIcon = styled.button`
   display:flex;
   justify-content: center;
   align-items:center; 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
 `;
 const WidgetPopOutContainer = styled.div`
   min-height: 260px;

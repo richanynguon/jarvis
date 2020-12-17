@@ -10,7 +10,7 @@ import { WalkThrough } from "./views/WalkThrough";
 import { ProjectHistoryOverView } from "./views/ProjectHistoryOverView";
 
 const OnboardContainer = styled.div`
-  border: 3px green solid;
+
   border-radius: 15px;
   height: 100%;
 `;
