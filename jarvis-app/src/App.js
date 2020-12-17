@@ -8,6 +8,7 @@ function App() {
   const [userState, setUserState] = useState({
     currentView: 0,
     onboardingProgress: 0,
+    userLevel: null,
     projects: {},
   });
 

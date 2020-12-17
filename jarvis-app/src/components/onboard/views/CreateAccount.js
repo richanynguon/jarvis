@@ -21,7 +21,7 @@ const WelcomeContainer = styled.div`
 
 const Dialogue = styled.div`
   text-align: center;
-  height: 300px;
+
 `;
 
 const ButtonsGroup = styled.div`
